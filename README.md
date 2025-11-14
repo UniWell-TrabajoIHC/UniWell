@@ -12,7 +12,12 @@ Curso: *IHC y Tecnologias Moviles*
 Universidad: *UPC*
 
 
-I
+Integrantes:
+- Jordan Nieva
+- Henry Susano
+- Lina Nieto
+- Nicolas Casafranca
+
 
 
 ##  Segmento objetivo:
