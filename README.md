@@ -46,9 +46,6 @@ El proyecto está diseñado para jóvenes que enfrentan altos niveles de estrés
 
 ## Archivos usados:
 - **HTML**
-- 
-- 
-- 
 - **CSS**
 - **JavaScript**
 - **Git / GitHub** (flujo GitFlow)
