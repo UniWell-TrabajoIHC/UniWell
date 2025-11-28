@@ -14,6 +14,7 @@
 </head>
 
 <body>
+
 <header class="header" id="header">
 
     <div class="LOGO">
@@ -22,21 +23,35 @@
         </a>
     </div>
 
-
     <nav class="barra-navegacion" id="nav">
-
         <ul class="elementos-navegacion">
-            <li><a href="#"> Sobre nosotros </a></li>
-            <li><a href="#"> Servicios </a></li>
-            <li><a href="#"> Planes </a></li>
-            <li><a href="#"> ¿Como funciona? </a></li>
-
+            <li><a href="#">Sobre nosotros</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#funciona">Planes</a></li>
+            <li><a href="#">¿Cómo funciona?</a></li>
         </ul>
     </nav>
 
     <button class="boton-iniciosesion">Iniciar Sesión</button>
 
+    <div class="hamburguesa" id="hamburguesa">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <nav class="nav-movil" id="navMovil">
+        <ul>
+            <li><a href="#">Sobre nosotros</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#">Planes</a></li>
+            <li><a href="#">¿Cómo funciona?</a></li>
+        </ul>
+    </nav>
+
 </header>
+
+<!--Menu principal-->
 
 <main>
     <section class="menu-principal">
@@ -55,6 +70,106 @@
         </div>
 
     </section>
+
+<!--Sobre nosotros-->
+
+
+
+
+
+<!--Servicios-->
+    <section class="servicios" id="servicios">
+    <h2 class="serv-titulo">Servicios</h2>
+
+    <div class="serv-contenedor">
+
+        <!-- Tarjeta izquierda -->
+        <div class="serv-tarjeta">
+            <div class="icono">📅</div>
+            <h3>Planificador de Hábitos</h3>
+            <ul>
+                <li>Crea rutinas saludables de descanso, estudio y autocuidado.</li>
+                <li>UniWell te ayuda a monitorear tu progreso y celebrar tus logros diarios.</li>
+            </ul>
+        </div>
+
+        <!-- Tarjeta central (verde) -->
+        <div class="serv-tarjeta central">
+            <div class="icono">📚</div>
+            <h3>Gestor Académico</h3>
+            <ul>
+                <li>Organiza tus tareas, clases y entregas en un solo lugar.</li>
+                <li>Recibe recordatorios automáticos.</li>
+                <li>Sincroniza tu calendario para mantener el control académico sin estrés.</li>
+            </ul>
+        </div>
+
+        <!-- Tarjeta derecha -->
+        <div class="serv-tarjeta">
+            <div class="icono">💡</div>
+            <h3>Consejos Personalizados</h3>
+            <p>Recibe recomendaciones adaptadas a tu ritmo académico y estado emocional, basadas en tus hábitos y metas personales.</p>
+           
+        </div>
+
+    </div>
+</section>
+
+<!--Planes-->
+
+
+
+<!--Como Funciona-->
+<section class="funciona" id="funciona">
+    <h2 class="funciona-titulo">¿Cómo Funciona?</h2>
+
+    <div class="funciona-linea"></div>
+
+    <div class="funciona-contenedor">
+
+        <!-- Paso 1 -->
+        <div class="funciona-item arriba">
+            <div class="funciona-tarjeta">
+                <h3>#1 Adquiere nuestra App</h3>
+                <p>Descarga nuestra app desde tu navegador o tienda movil preferida para empezar a disfrutar de nuestros servicios.</p>
+            </div>
+        </div>
+
+        <!-- Paso 2 -->
+        <div class="funciona-item abajo">
+            <div class="funciona-tarjeta">
+                <h3>#2 Regístrate y Crea tu Perfil</h3>
+                <p>Selecciona el plan que más se te acomode, regístrate en nuestra aplicación y crea tu perfil para conocer todos nuestros beneficios.</p>
+            </div>
+        </div>
+
+        <!-- Paso 3 -->
+        <div class="funciona-item arriba">
+            <div class="funciona-tarjeta">
+                <h3>#3 Monitoreo Diario</h3>
+                <p>Ingresa tus horarios diarios y programaciones. UniWell te ayuda a organizar mejor tus tiempos con sugerencias y consejos.</p>
+            </div>
+        </div>
+
+        <!-- Paso 4 -->
+        <div class="funciona-item abajo">
+            <div class="funciona-tarjeta">
+                <h3>#4 Recibe Alertas</h3>
+                <p>Recibirás alertas cuando el sistema detecte sobrecarga de tareas, horarios de descanso irregulares u otros factores críticos.</p>
+            </div>
+        </div>
+
+        <!-- Paso 5 -->
+        <div class="funciona-item arriba">
+            <div class="funciona-tarjeta">
+                <h3>#5 Cumple con tus Metas Diarias</h3>
+                <p>UniWell te recomienda nuevas rutinas y pausas saludables para mantener tu energía y bienestar.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
 </main>
 
 <footer>
