@@ -319,6 +319,7 @@ button:hover {
     margin-bottom: 15px;
 }
 
+<<<<<<< HEAD
 /*COMO FUNCIONA*/
 
 .funciona {
@@ -391,6 +392,8 @@ button:hover {
 }
 
 
+=======
+>>>>>>> 7a723108dcbad07f03f6978dbd9418ce8203b263
 /*  RESPONSIVE  */
 @media (max-width: 1100px) {
 
@@ -470,6 +473,7 @@ button:hover {
         min-height: 280px;
     }
 }
+<<<<<<< HEAD
 @media (max-width: 1100px) {
     .funciona-contenedor {
         flex-direction: column;
@@ -503,5 +507,7 @@ button:hover {
         font-size: 0.9rem;
     }
 }
+=======
+>>>>>>> 7a723108dcbad07f03f6978dbd9418ce8203b263
 
 
