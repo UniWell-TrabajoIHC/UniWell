@@ -314,12 +314,7 @@ button:hover {
     color: white;
 }
 
-.icono {
-    font-size: 3rem;
-    margin-bottom: 15px;
-}
 
-<<<<<<< HEAD
 /*COMO FUNCIONA*/
 
 .funciona {
@@ -369,7 +364,7 @@ button:hover {
 .funciona-item.arriba::after {
     content: "";
     position: absolute;
-    top: calc(100% + 10px);   
+    top: calc(100% + 10px);
     left: 50%;
     width: 3px;
     height: 90px;
@@ -383,7 +378,7 @@ button:hover {
 .funciona-item.abajo::before {
     content: "";
     position: absolute;
-    bottom: calc(100% + 10px);   
+    bottom: calc(100% + 10px);
     left: 50%;
     width: 3px;
     height: 90px;
@@ -392,8 +387,7 @@ button:hover {
 }
 
 
-=======
->>>>>>> 7a723108dcbad07f03f6978dbd9418ce8203b263
+
 /*  RESPONSIVE  */
 @media (max-width: 1100px) {
 
@@ -473,7 +467,6 @@ button:hover {
         min-height: 280px;
     }
 }
-<<<<<<< HEAD
 @media (max-width: 1100px) {
     .funciona-contenedor {
         flex-direction: column;
@@ -507,7 +500,5 @@ button:hover {
         font-size: 0.9rem;
     }
 }
-=======
->>>>>>> 7a723108dcbad07f03f6978dbd9418ce8203b263
 
 
