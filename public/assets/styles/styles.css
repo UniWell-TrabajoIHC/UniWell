@@ -50,6 +50,10 @@ button:hover {
     justify-content: space-between;
     color: black;
     padding: 1px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white; 
 
 }
 
@@ -58,6 +62,53 @@ button:hover {
     width: auto;
     object-fit: contain;
 }
+
+.hamburguesa {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.hamburguesa span {
+    width: 28px;
+    height: 3px;
+    background: #222;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.nav-movil {
+    display: none;
+    position: fixed;
+    top: 75px;
+    right: 0;
+    width: 100%;
+    background: white;
+    padding: 20px 0;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    z-index: 900;
+    text-align: center;
+}
+
+.nav-movil ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.nav-movil a {
+    text-decoration: none;
+    color: #222;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.nav-activo {
+    display: block;
+}
+
 
 
 .barra-navegacion {
@@ -126,6 +177,9 @@ button:hover {
     transform: translateY(-2px);
 }
 
+
+/*MENU PRINCIPAL*/
+
 .menu-principal {
     display: flex;
     align-items: flex-start;
@@ -189,8 +243,160 @@ button:hover {
 }
 
 
+/*SOBRE NOSOTROS*/
 
 
+/*SERVICIOS*/
 
+.servicios {
+    padding: 80px 0;
+    text-align: center;
+    background: linear-gradient(180deg, #d5e9e4, #bcd9d2);
+}
+
+.serv-titulo {
+    font-size: 3rem;
+    margin-bottom: 60px;
+    color: #111;
+}
+
+.serv-contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 50px;
+    padding: 0 120px;
+}
+
+
+.serv-tarjeta {
+    flex: 1;
+    max-width: 380px;      
+    min-height: 330px;     
+    background: white;
+    padding: 45px 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: transform 0.3s ease;
+}
+
+.serv-tarjeta:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.serv-tarjeta h3 {
+    font-size: 1.7rem;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    color: #222;
+}
+
+.serv-tarjeta ul {
+    font-size: 1.2rem;
+    line-height: 1.9rem;
+    margin-top: 10px;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.central {
+    background: #8ea897;
+    color: white;
+}
+
+.central h3,
+.central ul li {
+    color: white;
+}
+
+.icono {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+/*  RESPONSIVE  */
+@media (max-width: 1100px) {
+
+    .menu-principal {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .contenido-principal h1 {
+        font-size: 3rem;
+        white-space: normal;
+    }
+
+    .contenido-principal h3 {
+        font-size: 1.5rem;
+        white-space: normal;
+    }
+
+    .contenido-principal p {
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+        margin-top: 20px;
+    }
+
+    .imagen-principal img {
+        width: 80%;
+        margin-top: 40px;
+    }
+
+    .barra-navegacion {
+        display: none;
+    }
+
+    .boton-iniciosesion {
+        display: none;
+    }
+
+    .hamburguesa {
+        display: flex;
+    }
+}
+
+@media (max-width: 768px) {
+    .serv-contenedor {
+        flex-direction: column;
+        padding: 0 30px;
+    }
+
+    .serv-tarjeta {
+        max-width: 100%;
+        width: 95%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .contenido-principal h1 {
+        font-size: 2.2rem;
+    }
+
+    .contenido-principal h3 {
+        font-size: 1.3rem;
+    }
+
+    .boton-registrarse {
+        font-size: 1.4rem;
+        padding: 15px 30px;
+    }
+
+    .icono {
+        font-size: 2.4rem;
+    }
+
+    .serv-tarjeta {
+        padding: 35px 25px;
+        min-height: 280px;
+    }
+}
 
 
