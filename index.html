@@ -25,7 +25,7 @@
 
     <nav class="barra-navegacion" id="nav">
         <ul class="elementos-navegacion">
-            <li><a href="#">Sobre nosotros</a></li>
+            <li><a href="#nosotros">Sobre nosotros</a></li>
             <li><a href="#servicios">Servicios</a></li>
             <li><a href="#">Planes</a></li>
             <li><a href="#funciona">¿Cómo funciona?</a></li>
@@ -42,10 +42,10 @@
 
     <nav class="nav-movil" id="navMovil">
         <ul>
-            <li><a href="#">Sobre nosotros</a></li>
+            <li><a href="#nosotros">Sobre nosotros</a></li>
             <li><a href="#servicios">Servicios</a></li>
             <li><a href="#">Planes</a></li>
-            <li><a href="#">¿Cómo funciona?</a></li>
+            <li><a href="#funciona">¿Cómo funciona?</a></li>
         </ul>
     </nav>
 
@@ -71,10 +71,37 @@
 
     </section>
 
-<!--Sobre nosotros-->
+    <!--Sobre nosotros-->
+    <section class="nosotros" id="nosotros">
+    <h2>Nosotros somos:</h2>
 
+      <div class="contenido">
+        <div class="texto">
+          <img src="assets/images/unisomos.png" class="logo12" alt="Logo UniWell" >
 
+          <p>
+            UniWell es una plataforma innovadora desarrollada por estudiantes de
+            la Facultad de Ingeniería de la Universidad Peruana de Ciencias
+            Aplicadas. Con UniWell, los estudiantes pueden planificar sus
+            tareas, establecer recordatorios, practicar ejercicios de relajación
+            y monitorear su progreso personal de manera sencilla.
+          </p>
 
+          <p>
+            Nos enfocamos en brindar una solución integral que promueva la
+            productividad equilibrada y el bienestar emocional, ayudando a que
+            la vida universitaria sea más ordenada, saludable y satisfactoria.
+          </p>
+
+          <a class="mas-info" href="#">Más información →</a>
+        </div>
+
+        <div class="video">
+          <div class="video-box">▶</div>
+          <p class="equilibrio">Encuentra tu equilibrio</p>
+        </div>
+    </div>
+    </section>
 
 
 <!--Servicios-->
@@ -83,7 +110,6 @@
 
     <div class="serv-contenedor">
 
-        <!-- Tarjeta izquierda -->
         <div class="serv-tarjeta">
             <div class="icono">📅</div>
             <h3>Planificador de Hábitos</h3>
@@ -93,7 +119,6 @@
             </ul>
         </div>
 
-        <!-- Tarjeta central (verde) -->
         <div class="serv-tarjeta central">
             <div class="icono">📚</div>
             <h3>Gestor Académico</h3>
@@ -104,7 +129,6 @@
             </ul>
         </div>
 
-        <!-- Tarjeta derecha -->
         <div class="serv-tarjeta">
             <div class="icono">💡</div>
             <h3>Consejos Personalizados</h3>
@@ -172,9 +196,59 @@
 
 </main>
 
-<footer>
+ <section id="footer">
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-brand">
+            <img
+              src="assets/images/unisomos.png"
+              alt="Logo"
+              class="footer-logo"
+            />
+            <p>UniWell</p>
+            <small>© 2025 Todos los derechos reservados</small>
+          </div>
 
-</footer>
+
+          <div class="footer-links">
+            <h4>Legal</h4>
+            <a href="/Documentos/3.politica-privacidad.pdf"
+              >Política de Privacidad</a
+            >
+            <a href="#">Términos y Condiciones</a>
+            <a href="/Documentos/LeyProteccionDatos.pdf">Protección de Datos</a>
+          </div>
+
+          <div class="footer-social">
+            <h4>Síguenos</h4>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/174/174848.png"
+                alt="Facebook"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/174/174855.png"
+                alt="Instagram"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
+                alt="LinkedIn"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/733/733579.png"
+                alt="Twitter"
+                class="social-icon"
+            /></a>
+          </div>
+        </div>
+      </footer>
+    </section>
 
 <script src="assets/scripts/main.js"></script>
 </body>
