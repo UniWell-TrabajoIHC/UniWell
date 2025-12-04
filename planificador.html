@@ -51,33 +51,34 @@
 
 </header>
 
-    <!-- ▬▬▬ CONTENIDO PRINCIPAL ▬▬▬ -->
-    <main class="planificador">
+    <!-- Planificador -->
 
-        <section class="planificador-section">
+    <main>
+
+        <section class="planificador">
 
             <h2 class="planificador-titulo">Planificador de hábitos</h2>
 
             <div class="planificador-contenido">
 
-                <div class="planificador-acciones">
+                <div class="planificador-items">
 
                     <strong class="planificador-frase">
                         “Crea hábitos que mejoren tu día a día y <br>
                         mantén el equilibrio entre estudio y descanso.”
                     </strong>
 
-                    <a href="#" class="accion-btn">
+                    <a href="#rutina-bienestar" class="accion-boton">
                         <img src="https://img.icons8.com/?size=512&id=86557&format=png" class="accion-icono">
                         Rutina de bienestar
                     </a>
 
-                    <a href="#" class="accion-btn">
+                    <a href="#" class="accion-boton">
                         <img src="https://img.icons8.com/?size=512&id=23&format=png" class="accion-icono">
                         Registrar Hábitos
                     </a>
 
-                    <a href="#" class="accion-btn">
+                    <a href="#tarea" class="accion-boton">
                         <img src="https://img.icons8.com/?size=512&id=111399&format=png" class="accion-icono">
                         Añadir Tarea
                     </a>
@@ -90,12 +91,17 @@
 
         </section>
 
-        <section class="rutina-section" id="rutina-bienestar">
+    <!-- Rutina Bienestar -->
+
+        <section class="rutina" id="rutina-bienestar">
 
         <h2 class="rutina-titulo">Rutina de bienestar</h2>
 
-        <div class="rutina-subbox">
-            Rutina Respiración Pre.
+        <div class="rutina-select">
+            <select id="rutina" name="rutina" class="rutina-desplegable">
+                <option value="respiracion">Rutina Respiración Pre.</option>
+                <option value="nueva">+ Añadir nueva rutina</option>
+            </select>
         </div>
 
         <div class="rutina-contenedor">
@@ -127,19 +133,49 @@
         </div>
 
         <div class="rutina-botones">
-            <button class="btn-rutina pausa">Pausar</button>
-            <button class="btn-rutina reiniciar">Reiniciar</button>
-            <button class="btn-rutina finalizar">Finalizar sesión</button>
+            <button class="boton pausa">Pausar</button>
+            <button class="boton reiniciar">Reiniciar</button>
+            <button class="boton finalizar">Finalizar sesión</button>
         </div>
 
     </section>
+
+        <!-- Añadir Tarea -->
+
+        <section class="tarea" id="tarea">
+
+            <h2 class="tarea-titulo">Añadir Tarea</h2>
+
+            <div class="tarea-contenido">
+
+                <!-- FORMULARIO -->
+                <form class="tarea-form">
+
+                    <label for="nombre-tarea">Nombre de la tarea o actividad</label>
+                    <input type="text" id="nombre-tarea" placeholder="Ingrese el nombre ...">
+
+                    <label for="fecha-tarea">Añada la fecha de entrega</label>
+                    <input type="text" id="fecha-tarea" placeholder="dd/mm/aa">
+
+                    <label for="desc-tarea">Añada una descripción</label>
+                    <textarea id="desc-tarea" placeholder="Descripción ..."></textarea>
+
+                    <button class="boton-tarea">Añadir</button>
+
+                </form>
+
+                <img src="assets/images/tarea.png" class="tarea-img">
+
+            </div>
+
+        </section>
 
 
 
 
     </main>
 
-    <!-- ▬▬▬ FOOTER ORIGINAL ▬▬▬ -->
+    <!-- FOOTER  -->
     <section id="footer">
         <footer class="footer">
             <div class="footer-container">
