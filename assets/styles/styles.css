@@ -11,6 +11,7 @@ body {
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
+    
 }
 
 h1, h2, h3 {
@@ -53,8 +54,8 @@ button:hover {
 .barra-navegacion {
     flex: 1;
     display: flex;
-    justify-content: end;
-    padding-right: 50px;
+    justify-content: center;
+    padding: 0 200px;
 }
 
 .elementos-navegacion {
@@ -104,6 +105,17 @@ button:hover {
     transform: translateY(-2px);
 }
 
+.user-icon {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    object-fit: contain;
+    transition: transform 0.2s ease;
+}
+
+.user-icon:hover {
+    transform: scale(1.1);
+}
 
 /*NAV MÓVIL*/
 
@@ -205,6 +217,7 @@ button:hover {
     padding: 100px 0;
     background: linear-gradient(180deg, #d5e9e4, #bcd9d2);
     text-align: center;
+    min-height: 100vh;
 }
 
 .nosotros h2 {
@@ -279,6 +292,7 @@ button:hover {
     padding: 80px 0;
     text-align: center;
     background: linear-gradient(180deg, #d5e9e4, #bcd9d2);
+    min-height: 100vh;
 }
 
 .serv-titulo {
@@ -334,13 +348,21 @@ button:hover {
     color: #fff;
     box-shadow: 0 6px 20px rgba(0,0,0,0.22);
 }
+
 .serv-seccion:hover h3,
 .serv-seccion:hover li,
 .serv-seccion:hover p {
     color: white;
 }
+
 .serv-seccion:hover .icono-img {
     transform: scale(1.12);
+}
+
+.serv-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
 }
 
 
@@ -351,6 +373,7 @@ button:hover {
     padding: 80px 0;
     text-align: center;
     background: linear-gradient(180deg, #d5e9e4, #bcd9d2);
+    min-height: 100vh;
 }
 
 .planes-titulo {
@@ -411,7 +434,6 @@ button:hover {
     margin-bottom: 12px;
 }
 
-/* Botón */
 .plan-boton {
     background: crimson;
     color: #fff;
@@ -435,6 +457,7 @@ button:hover {
     padding: 100px 0;
     background: linear-gradient(180deg, #d5e9e4, #bcd9d2);
     text-align: center;
+    min-height: 100vh;
 }
 
 .funciona-titulo {
