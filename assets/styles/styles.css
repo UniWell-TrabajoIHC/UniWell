@@ -399,6 +399,101 @@ button:hover {
     margin-bottom: 15px;
 }
 
+
+/*PLANES*/
+
+.planes {
+    background: linear-gradient(180deg, #d5e9e4, #bcd9d2);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.planes-titulo {
+    font-size: 3rem;
+    margin-bottom: 40px;
+}
+
+.planes-contenedor {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+
+.plan-tarjeta {
+    width: 380px;
+    background: #fff;
+    border-radius: 12px;
+    padding: 25px 30px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+    text-align: left;
+    display: flex;
+    flex-direction: column;    
+}
+
+.plan-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 18px;
+    border-radius: 10px 10px 0 0;
+    margin: -25px -30px 20px -30px;
+}
+
+.plan-header h3 {
+    font-size: 1.9rem;    
+    font-weight: 600;
+    margin: 0;
+    flex: 1;               
+    text-align: center;     
+    padding-left: 25px;   
+}
+
+.plan-regular {
+    background: #7aa868;
+    color: #1a3b22;
+}
+
+.plan-plus {
+    background: #7ecf80;
+    color: #134c25;
+}
+
+.plan-icon {
+    width: 35px;
+    height: 35px;
+}
+
+
+.plan-tarjeta ul {
+    padding-left: 20px;
+}
+
+.plan-tarjeta ul li {
+    margin-bottom: 12px;
+    line-height: 1.45rem;
+    font-size: 0.95rem;
+}
+
+.plan-boton {
+    background: crimson;
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 8px;
+    margin: 20px auto 25px;;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.2s ease-in-out;
+}
+
+.plan-boton:hover {
+    background: #d96a6b;
+}
+
+
+
 /*COMO FUNCIONA*/
 
 .funciona {
@@ -731,4 +826,15 @@ button:hover {
     .social-icon {
         width: 28px;
     }
+}
+
+@media (max-width: 900px) {
+  .planes-contenedor {
+      gap: 40px;
+  }
+
+  .plan-card {
+      width: 90%;
+      max-width: 380px;
+  }
 }
