@@ -1,0 +1,95 @@
+
+/* Fondo y título */
+.gestor {
+    padding: 80px 10%;
+    background: linear-gradient(to bottom, #d5e9e4, #c8e0d8);
+}
+
+.gestor-titulo {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #222;
+}
+
+/* Bloques */
+.gestor-bloque {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+/* Título verde de cada categoría */
+.gestor-tag {
+    background: #8ccf88;
+    padding: 12px 20px;
+    width: fit-content;
+    border-radius: 6px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+/* Caja blanca con contenido */
+.gestor-caja {
+    background: #e7f2ec;
+    padding: 25px 25px;
+    border-radius: 10px;
+    width: 500px;
+    border: 1px solid #bfd4cd;
+}
+
+.gestor-caja ul {
+    margin: 10px 0 20px 20px;
+}
+
+.gestor-empty {
+    text-align: center;
+    color: #666;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+/* Imagenes */
+.gestor-img {
+    width: 500px;
+    height: auto;
+}
+
+/* Responsivo para tablet y móvil */
+@media (max-width: 900px) {
+
+    .gestor-bloque {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .gestor-img {
+        width: 280px;
+    }
+
+    .gestor-caja {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .gestor-img {
+        width: 220px;
+    }
+
+    .gestor-tag {
+        font-size: 1rem;
+        padding: 10px 16px;
+    }
+
+    .gestor-caja {
+        width: 100%;
+        padding: 20px;
+    }
+}

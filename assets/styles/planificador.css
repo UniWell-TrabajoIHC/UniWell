@@ -1,7 +1,7 @@
 /*Planificador*/
 
 .planificador {
-    padding: 80px 0;
+    padding: 80px 10%;
     background: linear-gradient(180deg, #d5e9e4, #bcd9d2);
     min-height: 92vh;
 }
