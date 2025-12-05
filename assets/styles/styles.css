@@ -607,19 +607,11 @@ button:hover {
         margin-left: auto;
     }
 
-    .hamburguesa span {
-        height: 2.5px;        
-        width: 26px;
-    }
-
     .header {
         padding: 6px 15px;      
         height: auto;
     }
 
-    .header .logo {
-    height: 45px;          
-    }
 
     /* MENÚ PRINCIPAL */
     .menu-principal {
