@@ -43,7 +43,7 @@ button:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1px 40px;
+    padding: 10px 20px;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -601,54 +601,90 @@ button:hover {
     .boton-iniciosesion {
         display: none;
     }
+
     .hamburguesa {
         display: flex;
+        margin-left: auto;
     }
 
+    .header {
+        padding: 10px 15px;
+    }
+
+    /* MENÚ PRINCIPAL */
     .menu-principal {
         flex-direction: column;
+        align-items: center;
         text-align: center;
         padding: 40px 20px;
     }
+
+    .contenido-principal h1 {
+        white-space: normal; /* ← evita que el título se salga */
+    }
+
+    .contenido-principal h3 {
+        white-space: normal;
+    }
+
     .imagen-principal img {
-        width: 80%;
+        width: 85%;
         margin-top: 40px;
     }
 
+    /* SOBRE NOSOTROS */
     .nosotros .contenido {
         flex-direction: column;
         text-align: center;
     }
 
+    iframe {
+        width: 100% !important;     /* Adaptar YouTube */
+        height: auto !important;
+        aspect-ratio: 16 / 9;
+    }
+
+    /* CÓMO FUNCIONA */
+    .funciona-linea {
+        display: none;
+    }
+
     .funciona-contenedor {
         flex-direction: column;
-        align-items: center;
-        gap: 70px;
+        gap: 30px;
+    }
+
+    .funciona-item.arriba,
+    .funciona-item.abajo {
+        transform: none;
+        margin: 0;
     }
 }
 
+
 @media (max-width: 480px) {
 
+    .header {
+        padding: 12px 10px;
+    }
+
     .contenido-principal h1 {
-        font-size: 2.2rem;
+        font-size: 2rem;
+        line-height: 2.3rem;
+        margin-top: 20px;
     }
+
     .contenido-principal h3 {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
+        line-height: 1.6rem;
     }
 
-    .serv-contenedor {
-        padding: 0 20px;
-    }
-    .serv-seccion {
-        width: 95%;
+    .contenido-principal p {
+        font-size: 1rem;
+        line-height: 1.6rem;
     }
 
-    .plan-tarjeta {
-        width: 95%;
-        padding: 20px;
-    }
-
-    .funciona-tarjeta {
-        width: 95%;
+    .imagen-principal img {
+        width: 90%;
     }
 }
